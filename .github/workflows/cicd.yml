@@ -18,3 +18,4 @@ jobs:
     - name: Run tests with pytest
       run: |
         echo "Your code passed tests! Insert deployment commands here (e.g., AWS, Heroku, Docker push)."
+        py main.py
