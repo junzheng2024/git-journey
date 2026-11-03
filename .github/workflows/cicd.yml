@@ -1,0 +1,20 @@
+name: Python CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # 1. Continuous Integration (Test & Lint)
+  ci:
+    runs-on: self-hosted
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Run tests with pytest
+      run: |
+        echo "Your code passed tests! Insert deployment commands here (e.g., AWS, Heroku, Docker push)."
