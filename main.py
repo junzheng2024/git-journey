@@ -15,4 +15,4 @@ df = pd.DataFrame(data)
 print("--- Full DataFrame ---")
 print(df)
 
-df.to_csv("df.csv")
+df.to_csv("output.csv")
