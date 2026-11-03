@@ -20,6 +20,5 @@ jobs:
         echo "Your code passed tests! Insert deployment commands here (e.g., AWS, Heroku, Docker push)."
         py main.py
     - name: Copy Output to Local Folder
-        run: |
-          # Windows (PowerShell)
-          Copy-Item -Path "output.csv" -Destination "C:\Users\Jun\test\"
+      run: |
+        Copy-Item -Path "output.csv" -Destination "C:\Users\Jun\test\"
